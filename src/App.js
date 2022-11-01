@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Carrousel from "./components/Carrousel";
+import Logo from "./components/Logo";
+import netflix from "./netflix.json";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <Logo />
       </header>
-    </div>
+      <main className="wrapper">
+        {netflix.map((e) => {
+          return (
+            <>
+              <h2>{e.category}</h2>
+              <Carrousel images={e.images} />
+            </>
+          );
+        })}
+      </main>
+      <footer>
+        <p>
+          Made at le Reacteur by <span>Thiru</span> - 2022
+        </p>
+      </footer>
+    </>
   );
 }
 
