@@ -3,8 +3,8 @@
 }
 
 .wrapper {
-  max-width: 1800px;
-  margin: 15px auto;
+  max-width: 1400px;
+  margin: 0px auto;
 }
 
 body {
@@ -18,7 +18,7 @@ header {
 }
 .logo {
   width: 250px;
-  margin: 20px;
+  margin: 20px 0;
 }
 
 footer {
@@ -45,4 +45,5 @@ footer span {
 
 h2 {
   font-size: 25px;
+  margin: 15px 0;
 }
