@@ -10,12 +10,12 @@ function App() {
         <Logo />
       </header>
       <main className="wrapper">
-        {netflix.map((e) => {
+        {netflix.map((e, index) => {
           return (
-            <>
+            <div key={index}>
               <h2>{e.category}</h2>
               <Carrousel images={e.images} />
-            </>
+            </div>
           );
         })}
       </main>

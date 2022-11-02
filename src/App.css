@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: rgb(39, 39, 39);
+  background-color: rgb(0, 0, 0);
   color: white;
 }
 header {
@@ -22,8 +22,9 @@ header {
 }
 
 footer {
+  background-color: black;
   height: 80px;
-  background-color: rgb(0, 0, 0);
+
   position: sticky;
   bottom: 0;
 }
@@ -41,6 +42,9 @@ footer span {
   width: 1800px;
   display: flex;
   overflow-x: scroll;
+}
+.carrousel::-webkit-scrollbar {
+  display: none;
 }
 
 h2 {
